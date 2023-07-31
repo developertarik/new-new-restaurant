@@ -1,8 +1,6 @@
-export default function contact(){
-    header.innerText = "Contact Page";
-    MyImg.src = contactImg;
-    box1.innerText = "E mail : notrealmail@gmail.com ";
-    box2.innerText  ="Phone number : XXX 000 XXX";
-    box3.innerText =  "Adress : World";
-    para.innerText = "Contact";
+export default function contact(header,box1,box2,box3){
+header.innerText = "Contact";
+box1.innerText = "email : XXX@gmail.com";
+box2.innerText = "phone:XXXXXXXXX";
+box3.innerText = "Lorem : XXXXXXX";
 }

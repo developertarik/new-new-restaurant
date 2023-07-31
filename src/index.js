@@ -8,7 +8,7 @@ function component() {
     const element = document.createElement("div");
     const topNav = document.createElement("div");
     const para = document.createElement("p");
-  
+  const header = document.createElement("h1");
      const main = document.createElement("a");
     const contactA = document.createElement("a");
     const aboutA = document.createElement("a");
@@ -22,14 +22,13 @@ function component() {
   
     main.innerText = "Main";
     aboutA.innerText = "About";
-  
     contactA.innerText = "Contact";
     para.innerText = "Main";
     para.style.textAlign = "center";
+    header.innerText ="Header";
+
     
-    const header = document.createElement("h1");
-    header.innerText = "Chicken Kebab";
-    //box
+     //box
     boxContainer.style.display = "flex";
     boxContainer.style.flexDirection = "column";
     boxContainer.style.gap = "50px";
@@ -75,13 +74,18 @@ function component() {
     
     //button
    
-    contactA.addEventListener("click",()=>contact)
-    aboutA.addEventListener("click",()=>about)
+    contactA.addEventListener("click",()=>{
+      MyImg.src = contactImg2;
+      contact(header,box1,box2,box3);
+    })
+    aboutA.addEventListener("click",() =>{
+      about(header,box1,box2,box3);
+
+    })
     main.addEventListener("click", () => {
       MyImg.src = chicken;
-   
-      header.innerText = "Chicken Kebab";
-      box1.innerText ="Chicken Kebab";
+      header.innerText = "main";
+       box1.innerText ="Chicken Kebab";
       box2.innerText ="Delicious Food";
       box3.innerText ="Sweet";
     });
@@ -101,10 +105,10 @@ function component() {
     boxContainer.appendChild(box1);
     boxContainer.appendChild(box2);
     boxContainer.appendChild(box3);
-  
+    
     element.appendChild(topNav);
-    element.appendChild(header);
     element.appendChild(MyImg);
+    element.appendChild(header)
     element.appendChild(para);
     element.appendChild(boxContainer);
   
