@@ -110,6 +110,9 @@ function component() {
     boxContainer.appendChild(box2);
     boxContainer.appendChild(box3);
     
+    const footer = document.createElement("p");
+    footer.innerText = "created by developertarik";
+
     
     element.appendChild(topNav);
     element.appendChild(restaurant);
@@ -117,6 +120,7 @@ function component() {
     element.appendChild(header)
     element.appendChild(para);
     element.appendChild(boxContainer);
+    element.appendChild(footer);
   
     return element;
   }

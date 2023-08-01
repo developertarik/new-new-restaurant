@@ -1,6 +1,6 @@
 export default function about(header,box1,box2,box3){
     header.innerText = "About";
-    box1.innerText = "email : XXX@gmail.com";
-    box2.innerText = "phone:XXXXXXXXX";
-    box3.innerText = "Lorem : XXXXXXX";
+    box1.innerText = "products: doner chicken, and kebab";
+    box2.innerText = "Price :5 Dollars";
+    box3.innerText = "Address : Turkey";
    }
