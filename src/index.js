@@ -9,6 +9,7 @@ function component() {
     const topNav = document.createElement("div");
     const para = document.createElement("p");
   const header = document.createElement("h1");
+  const restaurant = document.createElement("h1");
      const main = document.createElement("a");
     const contactA = document.createElement("a");
     const aboutA = document.createElement("a");
@@ -19,7 +20,7 @@ function component() {
     const box1 = document.createElement("div");
     const box2 = document.createElement("div");
     const box3 = document.createElement("div");
-  
+    restaurant.innerText = "My Restaurant App";
     main.innerText = "Main";
     aboutA.innerText = "About";
     contactA.innerText = "Contact";
@@ -39,20 +40,20 @@ function component() {
     //box1
     box1.style.width = "300px";
     box1.style.height = "200px";
-    box1.style.background = "purple";
+    box1.style.background = "#C8AE7D";
     box1.style.color = "white";
     box1.innerText ="Chicken Kebab";
     //box2
     box2.style.width = "300px";
     box2.style.height = "200px";
-    box2.style.background = "purple";
+    box2.style.background = "#C8AE7D";
     box2.style.color = "white";
     box2.innerText ="Delicious Food";
   
     //box3
     box3.style.width = "300px";
     box3.style.height = "200px";
-    box3.style.background = "purple";
+    box3.style.background = "#C8AE7D";
     box3.style.color = "white";
     box3.innerText ="Sweet";
   
@@ -62,7 +63,7 @@ function component() {
     element.style.justifyContent = "center";
     element.style.alignItems = "center";
     element.style.margin = "auto";
-    element.style.backgroundColor = "orange";
+    element.style.backgroundColor = "#EAC696";
     
     //Img
     const MyImg = new Image(500, 300);
@@ -89,11 +90,15 @@ function component() {
       box3.innerText ="Sweet";
     });
     //top navs
-    topNav.style.backgroundColor = "black";
     topNav.style.padding = "20px";
-    topNav.style.color = "white";
+    topNav.style.width = "80%";
+    
+    topNav.style.color = "black";
     topNav.style.display = "flex";
     topNav.style.flexDirection = "row";
+    topNav.style.justifyContent = "center";
+    topNav.style.alignItems = "center";
+
     topNav.style.gap = "50px";
     topNav.appendChild(main);
     topNav.appendChild(aboutA);
@@ -105,7 +110,9 @@ function component() {
     boxContainer.appendChild(box2);
     boxContainer.appendChild(box3);
     
+    
     element.appendChild(topNav);
+    element.appendChild(restaurant);
     element.appendChild(MyImg);
     element.appendChild(header)
     element.appendChild(para);
