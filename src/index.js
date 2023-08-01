@@ -75,7 +75,6 @@ function component() {
     //button
    
     contactA.addEventListener("click",()=>{
-      MyImg.src = contactImg2;
       contact(header,box1,box2,box3);
     })
     aboutA.addEventListener("click",() =>{
